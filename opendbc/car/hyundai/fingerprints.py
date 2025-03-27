@@ -1221,17 +1221,33 @@ FW_VERSIONS = {
   CAR.HYUNDAI_KONA_2022: {
     (Ecu.fwdCamera, 0x7c4, None): [
       b'\xf1\x00OSP LKA  AT USA LHD 1.00 1.04 99211-J9200 904',
+      b'\xf1\x8b !\x11!',
+    ],
+    (Ecu.abs, 0x7d1, None): [
+      b'\xf1\x8b !\t\x17',
+    ],
+     (Ecu.cornerRadar, 0x7b7, None): [
+      b'\xf1\x8b !\x12\x08 !\x12\x07',
+    ],
+      (Ecu.combinationMeter, 0x7c6, None): [
+      b'\xf1\x00071',
     ],
     (Ecu.eps, 0x7d4, None): [
       b'\xf1\x00OSP MDPS C 1.00 1.04 56310/J9291 4OPCC104',
     ],
     (Ecu.fwdRadar, 0x7d0, None): [
       b'\xf1\x00YB__ FCA -----      1.00 1.01 99110-J9000      \x00\x00\x00',
+      b'\xf1\x8b !\x10\x11',
     ],
     (Ecu.transmission, 0x7e1, None): [
       b'\xf1\x00T01G00BL  T01I00A1  DOS2T16X2XI00NS0\x8c`\xff\xe7',
       b'\xf1\x00T01G00BL  T01I00A1  DOS2T16X4XI00NS0\x99L\xeeq',
       b'\xf1\x00T01960BL  T01E60A1  DOS2T16X4XE60NS4N\x90\xe6\xcb',
+      b'\xf1\x87954A22D000\xf1\x89T01E60A1  \xf1\x82DOS2T16X4XE60NS4',
+      b'DOS2T16X4XE60NS4',
+    ],
+    (Ecu.engine, 0x7e0, None): [
+      [b'"\xf1\x87\xf1\x89\xf1\x82'],
     ],
   },
 }
